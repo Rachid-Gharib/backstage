@@ -1,5 +1,19 @@
 # @backstage/backend-app-api
 
+## 0.3.0-next.2
+
+### Patch Changes
+
+- 170282ece6: Fixed a bug in the default token manager factory where it created multiple incompatible instances.
+- 843a0a158c: Added service factory for the new core identity service.
+- 3b8fd4169b: Internal folder structure refactor.
+- Updated dependencies
+  - @backstage/backend-common@0.18.0-next.2
+  - @backstage/backend-plugin-api@0.3.0-next.2
+  - @backstage/backend-tasks@0.4.1-next.2
+  - @backstage/plugin-auth-node@0.2.9-next.2
+  - @backstage/plugin-permission-node@0.7.3-next.2
+
 ## 0.3.0-next.1
 
 ### Minor Changes
