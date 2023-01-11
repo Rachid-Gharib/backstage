@@ -149,7 +149,6 @@ export const lifecycleFactory: (
 
 // @public
 export function loadBackendConfig(options: {
-  logger: LoggerService;
   remote?: LoadConfigOptionsRemote;
   argv: string[];
 }): Promise<{
@@ -260,7 +259,7 @@ export const urlReaderFactory: (
 // @public
 export class WinstonLogger implements RootLoggerService {
   // (undocumented)
-  addRedactions(redactions: string[]): void;
+  addRedactions(redactions: Iterable<string>): void;
   // (undocumented)
   child(meta: LogMeta): LoggerService;
   static colorFormat(): Format;
