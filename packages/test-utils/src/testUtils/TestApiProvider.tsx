@@ -100,7 +100,7 @@ export class TestApiRegistry implements ApiHolder {
  *       [identityApiRef, mockIdentityApi as unknown as IdentityApi]
  *     ])}
  *   >
- *     {...}
+ *     // ...
  *   </ApiProvider>
  * )
  * ```
@@ -110,7 +110,7 @@ export class TestApiRegistry implements ApiHolder {
  * ```tsx
  * renderInTestApp(
  *   <TestApiProvider apis={[[identityApiRef, mockIdentityApi]]}>
- *     {...}
+ *     // ...
  *   </TestApiProvider>
  * )
  * ```
@@ -119,7 +119,7 @@ export class TestApiRegistry implements ApiHolder {
  * implements a subset of the `IdentityApi`.
  *
  * @public
- **/
+ */
 export const TestApiProvider = <T extends any[]>(
   props: TestApiProviderProps<T>,
 ) => {
